@@ -13,15 +13,15 @@ const MovieContextProvider = (props) => {
         { title: "Harakiri", director: "Masaki Kobayashi", year: "1962", id: 5 }
     ]);
 
-    const addMovie = (title, director, year) => {
-        setMovies([...Movies, { title, director, year, id: uuid() }]);
+    const addUnit = (title, director, year) => {
+        setUnits([...Units, { title, director, year, id: uuid() }]);
     };
-    const removeMovie = (id) => {
-        setMovies(Movies.filter(Movie => Movie.id !== id));
+    const removeUnit = (id) => {
+        setUnits(Units.filter(Unit => Unit.id !== id));
     }
 
     return (
-        <Unit.Provider value={{ Movies, addMovie, removeMovie }}>
+        <Unit.Provider value={{ Units, addUnit, removeUnit }}>
             {props.children}
         </Unit.Provider>
     );
