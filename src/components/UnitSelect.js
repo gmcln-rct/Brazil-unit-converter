@@ -1,10 +1,10 @@
 import React, { useContext, useState } from "react";
 
-import { ThemeContext } from "../contexts/ThemeContext";
+import { UnitContext } from "../contexts/UnitContext";
 
 
 const ThemeSelect = () => {
-    const { chooseTheme } = useContext(ThemeContext);
+    const { setUnit } = useContext(UnitContext);
 
     const [filterTheme] = useState('');
     let themeName = filterTheme;
