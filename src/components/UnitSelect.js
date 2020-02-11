@@ -40,19 +40,14 @@ const ThemeSelect = () => {
                     value={filterTheme}
                     onChange={handleChange}
                 >
-                    <option value="bob">Choose Filter</option>
-                    <option value="blur(10px)">Blur</option>
-                    <option value="brightness(3)">Brightness</option>
-                    <option value="contrast(3)">Contrast</option>
-                    <option value="drop-shadow(16px 16px 10px rgba(0,0,0,0.9)">
-                        Drop Shadow
-            </option>
-                    <option value="grayscale(100%)">GrayScale</option>
-                    <option value="invert(100%)">Invert</option>
-                    <option value="opacity(20%)">Opacity</option>
-                    <option value="sepia(100%)">Sepia</option>
-                    <option value="saturate(0%)">Saturate/Desaturate</option>
-                    <option value="none">Clear Filter</option>
+                    <option value="tea-us">teaspoon (US)</option>
+                    <option value="table-us">tablespoon (US)</option>
+                    <option value="cup-us">cup (US)</option>
+                    <option value="tea-bz">teaspoon (BZ)</option>
+                    <option value="dessert-bz">dessert spoon (BZ)</option>
+                    <option value="soup-bz">soup spoon (BZ)</option>
+                    <option value="cup-tea-bz">tea cup (BZ)</option>
+                    <option value="cup-bz">cup (BZ)</option>
                 </select>
 
             </form>
