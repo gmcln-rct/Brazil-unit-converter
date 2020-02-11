@@ -31,13 +31,12 @@ const ThemeSelect = () => {
                 {themeName}
                 <h1>CSS Filters</h1>
                 <h2>
-                    Choose from dropdown to explore how different CSS filters affect
-                    page elements above.
+                    Choose measurements for conversion
           </h2>
                 <br />
                 <select
-                    className="select-css"
-                    value={filterTheme}
+                    className="select-from"
+                    value={fromUnit}
                     onChange={handleChange}
                 >
                     <option value="tea-us">teaspoon (US)</option>
@@ -48,6 +47,16 @@ const ThemeSelect = () => {
                     <option value="soup-bz">soup spoon (BZ)</option>
                     <option value="cup-tea-bz">tea cup (BZ)</option>
                     <option value="cup-bz">cup (BZ)</option>
+                </select>
+
+                <select
+                    className="select-to"
+                    value={toUnit}
+                    onChange={handleChange}
+                >
+                    <option value="mil">milliliter</option>
+                    <option value="tea-us">teaspoon (US)</option>
+
                 </select>
 
             </form>
