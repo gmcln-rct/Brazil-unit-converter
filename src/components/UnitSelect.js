@@ -6,7 +6,7 @@ import { UnitContext } from "../contexts/UnitContext";
 const ThemeSelect = () => {
     const { setUnit } = useContext(UnitContext);
 
-    const [filterTheme] = useState('');
+    const [fromUnit, toUnit] = useState('');
     let themeName = filterTheme;
 
     function handleChange(e) {
