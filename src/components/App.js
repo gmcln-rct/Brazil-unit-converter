@@ -1,12 +1,16 @@
 import React from 'react';
 
 import Converter from './Converter';
+import UnitContextProvider from '../contexts/UnitContext';
+
 import '../styles/main.scss';
 
 function App() {
   return (
-    <div>
-      Larry rules
+    <div className="main-app">
+      <UnitContextProvider>
+          <Converter />
+      </UnitContextProvider>
     </div>
   );
 }
