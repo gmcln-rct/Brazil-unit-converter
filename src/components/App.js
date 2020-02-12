@@ -1,11 +1,11 @@
 import React from 'react';
 import logo from '../images/logo.svg';
-import './App.css';
+import '../styles/main.scss';
 
 function App() {
   return (
-    <div className="App">
-
+    <div>
+      Larry rules
     </div>
   );
 }
