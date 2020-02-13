@@ -31,9 +31,13 @@ const ThemeSelect = () => {
     return (
         <div className="theme-form">
             <form onSubmit={handleSubmit}>
-
-                <br />
                 <span>
+                <label>
+                    Amount:
+                    <input type="number" name="name" />
+                </label>
+
+
                 <select
                     className="select-from"
                     value={fromUnit}
