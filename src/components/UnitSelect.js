@@ -29,12 +29,12 @@ const ThemeSelect = () => {
 
 
     return (
-        <div className="theme-form">
+        <div className="unit-form">
             <form onSubmit={handleSubmit}>
                 <span>
                 <label>
                     Amount:
-                    <input type="number" name="name" />
+                    <input type="number" name="amount" min="0"/>
                 </label>
 
 

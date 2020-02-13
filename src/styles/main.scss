@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900|Nunito+Sans:300,400,600,700,900&display=swap');
 
 $color-bz-green: #009C3B;
 $color-bz-yellow: #FFDF00;
 $color-bz-yellow-subtle: rgb(255, 246, 185);
 $color-bz-blue: #002776;
 
+$font-header: 'Montserrat', sans-serif;
+$font-main: 'Nunito Sans', sans-serif;
 
 
 
@@ -36,12 +37,13 @@ body {
   margin: 0;
   padding: 10%;
 
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: $font-main;
 
   color: $color-bz-blue;
   background-color: $color-bz-yellow-subtle;
-
 }
+
+// HEADER SECTION
 
 .header-section{
   display: flex;
@@ -55,15 +57,21 @@ body {
   text-align: center;
   background-color: red;
 
-
+  h1 {
+    font-family: $font-header;
+  }
 }
 
+.unit-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 
-.theme-form {
+  width: 80%;
+  margin: 0 10%;
+  padding: 0.4rem;
 
-  
-  // width: 80vw;
-  // margin: 1vh 10vw;
+
 }
 
 
@@ -73,7 +81,7 @@ body {
 .select-from, .select-to {
   // display: block;
 
-  width: 11rem;
+  width: 12rem;
   max-width: 20%;
   margin: 0 0.4rem;
   padding: .6rem 1.4rem .5rem .8rem;
