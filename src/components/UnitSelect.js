@@ -31,7 +31,7 @@ const ThemeSelect = () => {
     return (
         <div className="theme-form">
             <form onSubmit={handleSubmit}>
-                <h1>CSS Filters</h1>
+                <h1>Converter</h1>
                 <h2>
                     Choose measurements for conversion
           </h2>
