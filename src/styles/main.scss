@@ -75,7 +75,12 @@ body {
 
 
 }
-
+ label input {
+    width: 1 rem;
+    margin: 0.4rem;
+    padding: 0.4rem;
+    font-size: 1rem;
+  }
 
 // DROPDOWN
 label {
@@ -84,11 +89,7 @@ label {
   font-weight: 700;
 }
 
-input {
-  margin: 0.4rem;
-  padding: 0.4rem;
-  	font-size: 1rem;
-}
+
 .select-from, .select-to {
 
   width: 12rem;
