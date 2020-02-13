@@ -53,6 +53,10 @@ const ThemeSelect = () => {
                     <option value="cup-bz">cup (BZ)</option>
                 </select>
 
+
+                <span> to </span>
+
+
                 <select
                     className="select-to"
                     value={toUnit}
