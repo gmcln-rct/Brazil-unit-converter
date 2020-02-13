@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900|Nunito+Sans:300,400,600,700,900&display=swap');
 
+$width-main: 90%;
+
 $color-bz-green: #009C3B;
 $color-bz-yellow: #FFDF00;
 $color-bz-yellow-subtle: rgb(255, 246, 185);
@@ -12,7 +14,7 @@ $font-main: 'Nunito Sans', sans-serif;
 
 body {
 
-    height: 100vh;
+  height: 100vh;
   width: 100vw;
 
     // margin: 0;
@@ -50,8 +52,8 @@ body {
   justify-content: center;
   flex-direction: column;
 
-  width: 80%;
-  margin: 0 10%;
+  width: $width-main;
+  margin: 0 5%;
   padding: 0.4rem;
 
   text-align: center;
@@ -67,8 +69,8 @@ body {
   justify-content: center;
   flex-direction: row;
 
-  width: 80%;
-  margin: 0 10%;
+  width: $width-main;
+  margin: 0 5%;
   padding: 0.4rem;
 
 
@@ -76,10 +78,18 @@ body {
 
 
 // DROPDOWN
+label {
+  padding: 0.4rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
 
-/* Select Tag */
+input {
+  margin: 0.4rem;
+  padding: 0.4rem;
+  	font-size: 1rem;
+}
 .select-from, .select-to {
-  // display: block;
 
   width: 12rem;
   max-width: 20%;

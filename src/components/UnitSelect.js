@@ -33,7 +33,7 @@ const ThemeSelect = () => {
             <form onSubmit={handleSubmit}>
                 <span>
                 <label>
-                    Amount:
+                    Enter Amount
                     <input type="number" name="amount" min="0"/>
                 </label>
 
