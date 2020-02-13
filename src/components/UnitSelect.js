@@ -33,6 +33,7 @@ const ThemeSelect = () => {
             <form onSubmit={handleSubmit}>
 
                 <br />
+                <span>
                 <select
                     className="select-from"
                     value={fromUnit}
@@ -57,7 +58,7 @@ const ThemeSelect = () => {
                     <option value="tea-us">teaspoon (US)</option>
 
                 </select>
-
+                </span>
             </form>
         </div>
     );

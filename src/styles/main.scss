@@ -14,17 +14,18 @@ body {
     height: 100vh;
   width: 100vw;
 
-    margin: 0;
+    // margin: 0;
+
+    overflow: hidden;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-
 }
 
-.main-app{
+#root {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -37,7 +38,6 @@ body {
 
   font-family: 'Source Sans Pro', sans-serif;
 
-
   color: $color-bz-blue;
   background-color: $color-bz-yellow-subtle;
 
@@ -47,9 +47,12 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 80vw;
 
-  margin: 10;
+  width: 80%;
+  margin: 0 10%;
+  padding: 0.4rem;
+
+  text-align: center;
   background-color: red;
 
 
@@ -57,7 +60,10 @@ body {
 
 
 .theme-form {
-  width: 80%;
+
+  
+  // width: 80vw;
+  // margin: 1vh 10vw;
 }
 
 
@@ -65,11 +71,12 @@ body {
 
 /* Select Tag */
 .select-from, .select-to {
-  display: block;
-  width: 20rem;
-  max-width: 50%;
-  margin: 0 auto;
-  padding: .6em 1.4em .5em .8em;
+  // display: block;
+
+  width: 11rem;
+  max-width: 20%;
+  margin: 0 0.4rem;
+  padding: .6rem 1.4rem .5rem .8rem;
   border: 1px solid #aaa;
   
 	font-size: 1rem;
