@@ -1,7 +1,9 @@
 import React from 'react';
 
-import Converter from './Converter';
 import UnitContextProvider from '../contexts/UnitContext';
+
+import Converter from './Converter';
+import UnitSelect from './UnitSelect';
 
 import '../styles/main.scss';
 
@@ -10,6 +12,8 @@ function App() {
     <div className="main-app">
       <UnitContextProvider>
           <Converter />
+        <UnitSelect />
+
       </UnitContextProvider>
     </div>
   );

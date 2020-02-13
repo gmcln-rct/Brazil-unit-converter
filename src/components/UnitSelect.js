@@ -7,7 +7,10 @@ const ThemeSelect = () => {
     const { setUnit } = useContext(UnitContext);
 
     const [fromUnit, toUnit] = useState('');
-    let themeName = filterTheme;
+    let themeName = 'larry';
+    let chooseTheme = function() {
+        return '';
+    }
 
     function handleChange(e) {
         chooseTheme(e.target.value);
@@ -28,7 +31,6 @@ const ThemeSelect = () => {
     return (
         <div className="theme-form">
             <form onSubmit={handleSubmit}>
-                {themeName}
                 <h1>CSS Filters</h1>
                 <h2>
                     Choose measurements for conversion
