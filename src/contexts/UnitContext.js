@@ -8,8 +8,8 @@ const UnitContextProvider = (props) => {
 
     const [Units, setUnits] = useState([
         {
-            selectedOutputType: "teaspoon",
             selectedInputType: "teaspoon",
+            selectedOutputType: "teaspoon",
             inputValue: "",
             conversions: ["Brazilian"],
             units: [
@@ -43,15 +43,10 @@ const UnitContextProvider = (props) => {
         }
     ]);
 
-    const addUnit = (title, director, year) => {
-        setUnits([...Units, { title, director, year, id: uuid() }]);
-    };
-    const removeUnit = (id) => {
-        setUnits(Units.filter(Unit => Unit.id !== id));
-    }
+
 
     return (
-        <UnitContext.Provider value={{ Units, addUnit, removeUnit }}>
+        <UnitContext.Provider value={{ Units }}>
             {props.children}
         </UnitContext.Provider>
     );

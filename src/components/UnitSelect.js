@@ -2,7 +2,6 @@ import React, { useContext, useState } from "react";
 
 import { UnitContext } from "../contexts/UnitContext";
 
-
 const ThemeSelect = () => {
     const { setUnit } = useContext(UnitContext);
 
