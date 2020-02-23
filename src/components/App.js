@@ -15,7 +15,7 @@ function App() {
       <LanguageContextProvider>
         <Header />
         <UnitSelect />
-        <Converted />
+        {/* <Converted /> */}
       </LanguageContextProvider>
     </div>
   );

@@ -67,7 +67,7 @@ code {
   // flex-direction: column;
 
   width: 100vw;
-  padding: 1rem;
+  padding: 2vmin;
 
   text-align: center;
   color: white;
@@ -85,26 +85,27 @@ code {
 
   width: $width-main;
   margin: 0 5%;
-  padding: 0.4rem;
+  padding: 5vmin;
 
 
 }
 
-.form-svg {
+// .form-svg {
   
-  width: 100px;
-  height: 100px;
+//   width: 100px;
+//   height: 100px;
 
-  margin: 40px 0;
-}
+//   margin: 40px 0;
+// }
 
   input {
-    padding: 1.5rem 1rem 0.7rem 1rem;
 
-    font-weight: 600;
+    margin: 0 1vmin;
+    padding: 1rem 1rem 0.7rem 1rem;
+
+    font-weight: 800;
     font-size: 1.5rem;
     text-align: center;
-    color: red;
 
     background: rgb(153,153,153);
     background: linear-gradient(0deg, rgba(153,153,153,1) 0%, rgba(216,164,172,0.1) 0%, rgba(255,255,255,1) 100%);
@@ -120,7 +121,7 @@ label {
 
 .select-from, .select-to {
 
-  width: 12rem;
+  width: 15rem;
   max-width: 20%;
   margin: 0 0.4rem;
   padding: .6rem 1.4rem .5rem .8rem;
