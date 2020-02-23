@@ -19,7 +19,7 @@ const LanguageSelect = () => {
             <h2>
                 Choose Language
             </h2>
-            {/* <select 
+            <select 
                 onChange={handleLanguageChange}
                 value={languageContext.language.id}
             >
@@ -31,8 +31,8 @@ const LanguageSelect = () => {
                         {item.text}
                     </option>
                 ))}
-            </select> */}
-            <div className="toggle-switch"
+            </select>
+            {/* <div className="toggle-switch"
                 onChange={handleLanguageChange}
                 value={languageContext.language.id}
             >
@@ -47,7 +47,7 @@ const LanguageSelect = () => {
                     <span className="toggle-switch-switch" />
                 </label>
 
-            </div>
+            </div> */}
 
         </section>
 
