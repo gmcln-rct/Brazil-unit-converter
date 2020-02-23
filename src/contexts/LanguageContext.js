@@ -1,56 +1,38 @@
+import React, { useState, createContext, useContext } from 'react';
 
-import React, { createContext, useState } from 'react';
-import uuid from 'uuid/v1';
+import { languageOptions, dictionaryList } from '../languages';
 
-export const LanguageContext = createContext();
+// create the language context with default selected language
+export const LanguageContext = createContext({
+    language: languageOptions[0],
+    dictionary: dictionaryList[languageOptions[0].id]
+});
 
-const LanguageContextProvider = (props) => {
+// it provides the language context to app
+export function LanguageContextProvider(props) {
+    const languageContext = useContext(LanguageContext);
+    const [language, setLanguage] = useState(languageContext.language);
+    const [dictionary, setDictionary] = useState(languageContext.dictionary);
 
-    const [Languages, setLanguages] = useState([
-        {
-            selectedInputType: "teaspoon",
-            selectedOutputType: "teaspoon",
-            inputValue: "",
-            conversions: ["Brazilian"],
-            Languages: [
-                {
-                    name: "teaspoon",
-                    type: "liquid",
-                    conversions: [
-                        {
-                            inputType: "teaspoon",
-                            conversion: (x) => x
-                        },
-                        {
-                            inputType: "dessert spoon",
-                            conversion: (x) => x / 12
-                        },
-                        {
-                            inputType: "soup spoon",
-                            conversion: (x) => x * 3
-                        },
-                        {
-                            inputType: "cup (Brazilian)",
-                            conversion: (x) => x / 30.54
-                        },
-                        
-
-                    ]
-                },
-                
-
-            ]
+    const provider = {
+        language,
+        dictionary,
+        setLanguage: (selectedLanguage) => {
+            setLanguage(selectedLanguage);
+            setDictionary(dictionaryList[selectedLanguage.id]);
         }
-    ]);
-
-
+    };
 
     return (
-        <LanguageContext.Provider value={{ Languages }}>
+        <LanguageContextProvider value={provider}>
             {props.children}
-        </LanguageContext.Provider>
+        </LanguageContextProvider>
     );
-}
+};
 
-export default LanguageContextProvider;
+// get text according to id & current language
+export function Text(props) {
+    const languageContext = useContext(LanguageContext);
 
+    return languageContext.dictionary[props.tid];
+};
