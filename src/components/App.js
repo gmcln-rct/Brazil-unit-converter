@@ -4,6 +4,8 @@ import {LanguageContextProvider} from '../contexts/LanguageContext';
 
 import Header from './Header';
 import UnitSelect from './UnitSelect';
+import LanguageSelect from './LanguageSelect';
+
 
 import '../styles/reset.css';
 import '../styles/main.scss';
@@ -14,7 +16,6 @@ function App() {
       <LanguageContextProvider>
         <Header />
         <UnitSelect />
-        {/* <Converted /> */}
       </LanguageContextProvider>
     </div>
   );

@@ -3,9 +3,9 @@ import React, { useContext } from 'react';
 
 import { languageOptions } from '../languages';
 
-import { LanguageContext } from '../containers/Language';
+import { LanguageContext } from '../contexts/LanguageContext';
 
-export default function LanguageSelector() {
+const LanguageSelect = () => {
     const languageContext = useContext(LanguageContext);
 
     const handleLanguageChange = (event) => {
@@ -30,3 +30,7 @@ export default function LanguageSelector() {
         </select>
     );
 };
+
+
+
+export default LanguageSelect;

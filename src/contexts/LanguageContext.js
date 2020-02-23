@@ -24,9 +24,9 @@ export function LanguageContextProvider(props) {
     };
 
     return (
-        <LanguageContextProvider value={provider}>
+        <LanguageContext.Provider value={provider}>
             {props.children}
-        </LanguageContextProvider>
+        </LanguageContext.Provider>
     );
 };
 
