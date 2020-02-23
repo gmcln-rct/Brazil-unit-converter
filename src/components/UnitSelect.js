@@ -5,30 +5,34 @@ import { LanguageContext } from "../contexts/LanguageContext";
 const UnitSelect = () => {
     const { language, setLanguage } = useContext(LanguageContext);
 
-    // const [fromUnit, toUnit] = useState('');
-    // let chooseTheme = function() {
-    //     return '';
-    // }
 
     const [convertedVal, setConvertedVal] = useState(1);
-    const [amount, setAmount] = useState(0);
-    const [fromUnit, setFromUnit] = useState(1);
+    const [amount, setAmount] = useState(1);
+    const [fromUnit, setFromUnit] = useState(5);
     const [toUnit, setToUnit] = useState(1);
 
     const [fromUnits, setfromUnits] = useState([
         { label: "Teaspoon (BZ)", value: "tea-bz", conversion: 5 },
         { label: "Dessert spoon (BZ)", value: "dessert-bz", conversion: 10 },
         { label: "Soup spoon (BZ)", value: "soup-bz", conversion: 15 },
-        // { label: "Teacup (BZ)", value: "cup-tea-bz" },
-        // { label: "Cup (BZ)", value: "cup-bz" },
-        // { label: "Teaspoon (US)", value: "tea-us" },
-        // { label: "Tablespoon (US)", value: "table-us" },
-        // { label: "Cup (US)", value: "cup-us" },
+        { label: "Teacup (BZ)", value: "cup-tea-bz", conversion: 250 },
+        { label: "Cup (BZ)", value: "cup-bz", conversion: 240 },
+        { label: "Teaspoon (US)", value: "tea-us", conversion: 4.92 },
+        { label: "Tablespoon (US)", value: "table-us", conversion: 14.79 },
+        { label: "Cup (US)", value: "cup-us", conversion: 240 },
+        { label: "Milliliter", value: "ml", conversion: 1 },
     ]);
 
     const [toUnits, setToUnits] = useState([
-        { label: "Milliliter", value: "mil", conversion: 1 },
-        { label: "Cup (US)", value: "cup-us", conversion: 250 },
+        { label: "Teaspoon (BZ)", value: "tea-bz", conversion: 5 },
+        { label: "Dessert spoon (BZ)", value: "dessert-bz", conversion: 10 },
+        { label: "Soup spoon (BZ)", value: "soup-bz", conversion: 15 },
+        { label: "Teacup (BZ)", value: "cup-tea-bz", conversion: 250 },
+        { label: "Cup (BZ)", value: "cup-bz", conversion: 240 },
+        { label: "Teaspoon (US)", value: "tea-us", conversion: 4.92 },
+        { label: "Tablespoon (US)", value: "table-us", conversion: 14.79 },
+        { label: "Cup (US)", value: "cup-us", conversion: 240 },
+        { label: "Milliliter", value: "ml", conversion: 1 },
     ]);
 
     useEffect(() => {
@@ -73,7 +77,7 @@ const UnitSelect = () => {
                 <select
                     className="select-from"
                     value={fromUnit}
-                    onChange={setFromUnit}
+                    onChange={event => setFromUnit(event.target.value)}
                 >
 
                 {fromUnits.map(({ label, value, conversion }) => (
@@ -90,17 +94,21 @@ const UnitSelect = () => {
                 <select
                     className="select-to"
                     value={toUnit}
-                    onChange={setToUnit}
+                    onChange={event => setToUnit(event.target.value)}
                 >
                     {toUnits.map(({ label, value, conversion }) => (
-                        <option key={value} value={value}>
+                        <option key={value} value={conversion}>
                             {label}
                         </option>
                     ))}
 
                 </select>
+                        <span>
+                            => 
+                        </span>
+                <span className='converted-val'>{convertedVal}</span>
                 </span>
-            <p>{convertedVal}</p>
+
         </div>
     );
 };
