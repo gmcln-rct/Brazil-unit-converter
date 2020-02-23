@@ -67,11 +67,7 @@ const UnitSelect = () => {
                         type='number'
 
                         autoFocus
-                        // inputProps={{ "data-testid": "tsp-bz" }}
-                        value={
-                            amount
-                        }
-                        // onChange={event => tryConvert(event.target)}
+                        value={amount}
                         onChange={event => setAmount(event.target.value)}
                     />
                 <select
@@ -106,7 +102,7 @@ const UnitSelect = () => {
                         <span>
                             => 
                         </span>
-                <span className='converted-val'>{convertedVal}</span>
+                <span className='converted-val'>{(Number.isInteger(convertedVal) ? convertedVal: convertedVal.toFixed(2))}</span>
                 </span>
 
         </div>
