@@ -82,6 +82,7 @@ code {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  flex-wrap: wrap;
 
   width: $width-main;
   margin: 0 5%;
@@ -90,26 +91,29 @@ code {
 
 }
 
-// .form-svg {
-  
-//   width: 100px;
-//   height: 100px;
 
-//   margin: 40px 0;
-// }
 
-  input {
+input[type=number] {
+    width: 5rem;
+    margin: 0 2vmin;
+    padding: 1rem 1rem 0.7rem 1.4rem;
 
-    margin: 0 1vmin;
-    padding: 1rem 1rem 0.7rem 1rem;
 
-    font-weight: 800;
-    font-size: 1.5rem;
+        font-size: 1.2rem;
+        font-weight: 700;
     text-align: center;
 
+   
     background: rgb(153,153,153);
     background: linear-gradient(0deg, rgba(153,153,153,1) 0%, rgba(216,164,172,0.1) 0%, rgba(255,255,255,1) 100%);
+  
+
+
+
+
+
   }
+ 
 
 // DROPDOWN
 label {
@@ -121,7 +125,7 @@ label {
 
 .select-from, .select-to {
 
-  width: 15rem;
+  width: 20rem;
   max-width: 20%;
   margin: 0 0.4rem;
   padding: .6rem 1.4rem .5rem .8rem;
@@ -181,94 +185,4 @@ label {
     padding: 1vmin;
     font-size: 1.4rem;
   }
-}
-
-toggle-switch {
-  position: relative;
-  width: 75px;
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  text-align: left;
-}
-.toggle-switch-checkbox {
-  display: none;
-}
-.toggle-switch-label {
-  display: block;
-  overflow: hidden;
-  cursor: pointer;
-  border: 0 solid #ccc;
-  border-radius: 20px;
-  margin: 0;
-}
-.toggle-switch-inner {
-  display: block;
-  width: 200%;
-  margin-left: -100%;
-  transition: margin 0.3s ease-in 0s;
-}
-.toggle-switch-inner::before, .toggle-switch-inner::after {
-  display: block;
-  float: left;
-  width: 50%;
-  height: 34px;
-  padding: 0;
-  line-height: 34px;
-  font-size: 14px;
-  color: white;
-  font-weight: bold;
-  box-sizing: border-box;
-}
-.toggle-switch-inner:before {
-  content: "Yes";
-  text-transform: uppercase;
-  padding-left: 10px;
-  background-color: #f90;
-  color: #fff;
-}
-.toggle-switch-disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-.toggle-switch-disabled::before {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-.toggle-switch-inner::after {
-  content: "No";
-  text-transform: uppercase;
-  padding-right: 10px;
-  background-color: #ccc;
-  color: #fff;
-  text-align: right;
-}
-.toggle-switch-switch {
-  display: block;
-  width: 24px;
-  margin: 5px;
-  background: #fff;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 40px;
-  border: 0 solid #ccc;
-  border-radius: 20px;
-  transition: all 0.3s ease-in 0s;
-}
-.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-inner {
-  margin-left: 0;
-}
-.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-switch {
-  right: 0px;
-}
-.toggle-switch-inner::before {
-  content: attr(data-yes);
-  /* other styles */
-}
-.toggle-switch-inner::after {
-  content: attr(data-no);
-  /* other styles */
 }
