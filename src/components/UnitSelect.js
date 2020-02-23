@@ -1,30 +1,47 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 
 import { LanguageContext } from "../contexts/LanguageContext";
 
 const UnitSelect = () => {
     const { language, setLanguage } = useContext(LanguageContext);
 
-    const [fromUnit, toUnit] = useState('');
-    let chooseTheme = function() {
-        return '';
-    }
+    // const [fromUnit, toUnit] = useState('');
+    // let chooseTheme = function() {
+    //     return '';
+    // }
 
-    const [fromItems] = useState([
-        { label: "Teaspoon (BZ)", value: "tea-bz" },
-        { label: "Dessert spoon (BZ)", value: "dessert-bz" },
-        { label: "Soup spoon (BZ)", value: "soup-bz" },
-        { label: "Teacup (BZ)", value: "cup-tea-bz" },
-        { label: "Cup (BZ)", value: "cup-bz" },
-        { label: "Teaspoon (US)", value: "tea-us" },
-        { label: "Tablespoon (US)", value: "table-us" },
-        { label: "Cup (US)", value: "cup-us" },
+    const [convertedVal, setConvertedVal] = useState(1);
+    const [amount, setAmount] = useState(0);
+    const [fromUnit, setFromUnit] = useState(1);
+    const [toUnit, setToUnit] = useState(1);
+
+    const [fromUnits, setfromUnits] = useState([
+        { label: "Teaspoon (BZ)", value: "tea-bz", conversion: 5 },
+        { label: "Dessert spoon (BZ)", value: "dessert-bz", conversion: 10 },
+        { label: "Soup spoon (BZ)", value: "soup-bz", conversion: 15 },
+        // { label: "Teacup (BZ)", value: "cup-tea-bz" },
+        // { label: "Cup (BZ)", value: "cup-bz" },
+        // { label: "Teaspoon (US)", value: "tea-us" },
+        // { label: "Tablespoon (US)", value: "table-us" },
+        // { label: "Cup (US)", value: "cup-us" },
     ]);
 
+    const [toUnits, setToUnits] = useState([
+        { label: "Milliliter", value: "mil", conversion: 1 },
+        { label: "Cup (US)", value: "cup-us", conversion: 250 },
+    ]);
+
+    useEffect(() => {
+        setConvertedVal(amount *fromUnit / toUnit)
+    }, [amount,fromUnit, toUnit]);
+
+    // const 
+
     function handleChange(e) {
-        chooseTheme(e.target.value);
+        // chooseTheme(e.target.value);
         let idx = e.target.selectedIndex;
-        language = e.target.options[idx].innerText;
+
+        console.log(e.target.options[idx].value);
         return (
             <div>Dogs and cats</div>
         )
@@ -37,51 +54,35 @@ const UnitSelect = () => {
 
     return (
         <div className="unit-form">
-            <form onSubmit={handleSubmit}>
                 <span>
-                <label>
-                    Enter Amount
-                    <input type="number" name="amount" min="0"/>
-                </label>
 
+                    <input
+                        id="amount"
+                        label="Amount"
+                        name="tsp-bz"
+                        type='number'
+
+                        autoFocus
+                        // inputProps={{ "data-testid": "tsp-bz" }}
+                        value={
+                            amount
+                        }
+                        // onChange={event => tryConvert(event.target)}
+                        onChange={event => setAmount(event.target.value)}
+                    />
                 <select
                     className="select-from"
                     value={fromUnit}
-                    onChange={handleChange}
+                    onChange={setFromUnit}
                 >
-                    {/* {fromItems.map(item => (
-                        <option
-                            key={item.value}
-                            value={item.value}
-                        >
-                            {item.label}
-                        </option>
-                    ))} */}
 
-
-                {fromItems.map(({ label, value }) => (
-                    <option key={value} value={value}>
+                {fromUnits.map(({ label, value, conversion }) => (
+                    <option key={value} value={conversion}>
                         {label}
                     </option>
                 ))}
 
                 </select>
-
-                {/* <select
-                    className="select-from"
-                    value={fromUnit}
-                    onChange={handleChange}
-                >
-                    <option value="tea-us">teaspoon (US)</option>
-                    <option value="table-us">tablespoon (US)</option>
-                    <option value="cup-us">cup (US)</option>
-                    <option value="tea-bz">teaspoon (BZ)</option>
-                    <option value="dessert-bz">dessert spoon (BZ)</option>
-                    <option value="soup-bz">soup spoon (BZ)</option>
-                    <option value="cup-tea-bz">tea cup (BZ)</option>
-                    <option value="cup-bz">cup (BZ)</option>
-                </select> */}
-
 
                 <span> to </span>
 
@@ -89,14 +90,17 @@ const UnitSelect = () => {
                 <select
                     className="select-to"
                     value={toUnit}
-                    onChange={handleChange}
+                    onChange={setToUnit}
                 >
-                    <option value="mil">milliliter</option>
-                    <option value="tea-us">teaspoon (US)</option>
+                    {toUnits.map(({ label, value, conversion }) => (
+                        <option key={value} value={value}>
+                            {label}
+                        </option>
+                    ))}
 
                 </select>
                 </span>
-            </form>
+            <p>{convertedVal}</p>
         </div>
     );
 };
