@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/gmcln-rct/Brazil-unit-converter/static/css/main.c3804b9e.chunk.css",
-    "main.js": "/gmcln-rct/Brazil-unit-converter/static/js/main.5557f543.chunk.js",
-    "main.js.map": "/gmcln-rct/Brazil-unit-converter/static/js/main.5557f543.chunk.js.map",
-    "runtime-main.js": "/gmcln-rct/Brazil-unit-converter/static/js/runtime-main.c70b811e.js",
-    "runtime-main.js.map": "/gmcln-rct/Brazil-unit-converter/static/js/runtime-main.c70b811e.js.map",
-    "static/js/2.535adac6.chunk.js": "/gmcln-rct/Brazil-unit-converter/static/js/2.535adac6.chunk.js",
-    "static/js/2.535adac6.chunk.js.map": "/gmcln-rct/Brazil-unit-converter/static/js/2.535adac6.chunk.js.map",
-    "index.html": "/gmcln-rct/Brazil-unit-converter/index.html",
-    "precache-manifest.0a2546bf8aee109fe89454bb129105a8.js": "/gmcln-rct/Brazil-unit-converter/precache-manifest.0a2546bf8aee109fe89454bb129105a8.js",
-    "service-worker.js": "/gmcln-rct/Brazil-unit-converter/service-worker.js",
-    "static/css/main.c3804b9e.chunk.css.map": "/gmcln-rct/Brazil-unit-converter/static/css/main.c3804b9e.chunk.css.map",
-    "static/js/2.535adac6.chunk.js.LICENSE.txt": "/gmcln-rct/Brazil-unit-converter/static/js/2.535adac6.chunk.js.LICENSE.txt"
+    "main.css": "/Brazil-unit-converter/static/css/main.c3804b9e.chunk.css",
+    "main.js": "/Brazil-unit-converter/static/js/main.a9996172.chunk.js",
+    "main.js.map": "/Brazil-unit-converter/static/js/main.a9996172.chunk.js.map",
+    "runtime-main.js": "/Brazil-unit-converter/static/js/runtime-main.8dfed327.js",
+    "runtime-main.js.map": "/Brazil-unit-converter/static/js/runtime-main.8dfed327.js.map",
+    "static/js/2.535adac6.chunk.js": "/Brazil-unit-converter/static/js/2.535adac6.chunk.js",
+    "static/js/2.535adac6.chunk.js.map": "/Brazil-unit-converter/static/js/2.535adac6.chunk.js.map",
+    "index.html": "/Brazil-unit-converter/index.html",
+    "precache-manifest.0de6e78c6857b09f93d6702aee4351b1.js": "/Brazil-unit-converter/precache-manifest.0de6e78c6857b09f93d6702aee4351b1.js",
+    "service-worker.js": "/Brazil-unit-converter/service-worker.js",
+    "static/css/main.c3804b9e.chunk.css.map": "/Brazil-unit-converter/static/css/main.c3804b9e.chunk.css.map",
+    "static/js/2.535adac6.chunk.js.LICENSE.txt": "/Brazil-unit-converter/static/js/2.535adac6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c70b811e.js",
+    "static/js/runtime-main.8dfed327.js",
     "static/js/2.535adac6.chunk.js",
     "static/css/main.c3804b9e.chunk.css",
-    "static/js/main.5557f543.chunk.js"
+    "static/js/main.a9996172.chunk.js"
   ]
 }
