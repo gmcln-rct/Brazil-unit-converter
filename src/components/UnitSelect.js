@@ -11,11 +11,21 @@ const ThemeSelect = () => {
         return '';
     }
 
+    const [fromItems] = useState([
+        { label: "Teaspoon (BZ)", value: "tea-bz" },
+        { label: "Dessert spoon (BZ)", value: "dessert-bz" },
+        { label: "Soup spoon (BZ)", value: "soup-bz" },
+        { label: "Teacup (BZ)", value: "cup-tea-bz" },
+        { label: "Cup (BZ)", value: "cup-bz" },
+        { label: "Teaspoon (US)", value: "tea-us" },
+        { label: "Tablespoon (US)", value: "table-us" },
+        { label: "Cup (US)", value: "cup-us" },
+    ]);
+
     function handleChange(e) {
         chooseTheme(e.target.value);
         let idx = e.target.selectedIndex;
         themeName = e.target.options[idx].innerText;
-        console.log(themeName);
         return (
             <div>Dogs and cats</div>
         )
@@ -35,8 +45,22 @@ const ThemeSelect = () => {
                     <input type="number" name="amount" min="0"/>
                 </label>
 
-
                 <select
+                    className="select-from"
+                    value={fromUnit}
+                    onChange={handleChange}
+                >
+                    {fromItems.map(item => (
+                        <option
+                            key={item.value}
+                            value={item.value}
+                        >
+                            {item.label}
+                        </option>
+                    ))}
+                </select>
+
+                {/* <select
                     className="select-from"
                     value={fromUnit}
                     onChange={handleChange}
@@ -49,7 +73,7 @@ const ThemeSelect = () => {
                     <option value="soup-bz">soup spoon (BZ)</option>
                     <option value="cup-tea-bz">tea cup (BZ)</option>
                     <option value="cup-bz">cup (BZ)</option>
-                </select>
+                </select> */}
 
 
                 <span> to </span>
