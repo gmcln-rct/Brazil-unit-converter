@@ -8,7 +8,6 @@ const UnitDetail = ({ movie }) => {
                 {/* <Text tid="value" /> */}
                 {/* {Text.tid} */}
             </option>
-
     );
 }
 
