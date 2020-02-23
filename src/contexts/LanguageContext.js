@@ -2,17 +2,17 @@
 import React, { createContext, useState } from 'react';
 import uuid from 'uuid/v1';
 
-export const UnitContext = createContext();
+export const LanguageContext = createContext();
 
-const UnitContextProvider = (props) => {
+const LanguageContextProvider = (props) => {
 
-    const [Units, setUnits] = useState([
+    const [Languages, setLanguages] = useState([
         {
             selectedInputType: "teaspoon",
             selectedOutputType: "teaspoon",
             inputValue: "",
             conversions: ["Brazilian"],
-            units: [
+            Languages: [
                 {
                     name: "teaspoon",
                     type: "liquid",
@@ -46,11 +46,11 @@ const UnitContextProvider = (props) => {
 
 
     return (
-        <UnitContext.Provider value={{ Units }}>
+        <LanguageContext.Provider value={{ Languages }}>
             {props.children}
-        </UnitContext.Provider>
+        </LanguageContext.Provider>
     );
 }
 
-export default UnitContextProvider;
+export default LanguageContextProvider;
 

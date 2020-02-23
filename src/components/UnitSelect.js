@@ -1,12 +1,11 @@
 import React, { useContext, useState } from "react";
 
-import { UnitContext } from "../contexts/UnitContext";
+import { LanguageContext } from "../contexts/LanguageContext";
 
-const ThemeSelect = () => {
-    const { setUnit } = useContext(UnitContext);
+const UnitSelect = () => {
+    const { language, setLanguage } = useContext(LanguageContext);
 
     const [fromUnit, toUnit] = useState('');
-    let themeName = 'larry';
     let chooseTheme = function() {
         return '';
     }
@@ -25,7 +24,7 @@ const ThemeSelect = () => {
     function handleChange(e) {
         chooseTheme(e.target.value);
         let idx = e.target.selectedIndex;
-        themeName = e.target.options[idx].innerText;
+        language = e.target.options[idx].innerText;
         return (
             <div>Dogs and cats</div>
         )
@@ -50,14 +49,22 @@ const ThemeSelect = () => {
                     value={fromUnit}
                     onChange={handleChange}
                 >
-                    {fromItems.map(item => (
+                    {/* {fromItems.map(item => (
                         <option
                             key={item.value}
                             value={item.value}
                         >
                             {item.label}
                         </option>
-                    ))}
+                    ))} */}
+
+
+                {fromItems.map(({ label, value }) => (
+                    <option key={value} value={value}>
+                        {label}
+                    </option>
+                ))}
+
                 </select>
 
                 {/* <select
@@ -95,4 +102,4 @@ const ThemeSelect = () => {
 };
 
 
-export default ThemeSelect;
+export default UnitSelect;

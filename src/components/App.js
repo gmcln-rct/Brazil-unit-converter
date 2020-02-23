@@ -1,6 +1,6 @@
 import React from 'react';
 
-import UnitContextProvider from '../contexts/UnitContext';
+import LanguageContextProvider from '../contexts/LanguageContext';
 
 import Header from './Header';
 import UnitSelect from './UnitSelect';
@@ -12,11 +12,11 @@ import '../styles/main.scss';
 function App() {
   return (
     <div>
-      <UnitContextProvider>
+      <LanguageContextProvider>
         <Header />
         <UnitSelect />
         <Converted />
-      </UnitContextProvider>
+      </LanguageContextProvider>
     </div>
   );
 }
