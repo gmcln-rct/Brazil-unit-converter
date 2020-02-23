@@ -15,19 +15,26 @@ const LanguageSelect = () => {
     };
 
     return (
-        <select
-            onChange={handleLanguageChange}
-            value={languageContext.language.id}
-        >
-            {languageOptions.map(item => (
-                <option
-                    key={item.id}
-                    value={item.id}
-                >
-                    {item.text}
-                </option>
-            ))}
-        </select>
+        <section className='language-select'>
+            <h2>
+                Choose Language
+            </h2>
+            <select 
+                onChange={handleLanguageChange}
+                value={languageContext.language.id}
+            >
+                {languageOptions.map(item => (
+                    <option
+                        key={item.id}
+                        value={item.id}
+                    >
+                        {item.text}
+                    </option>
+                ))}
+            </select>
+
+        </section>
+
     );
 };
 

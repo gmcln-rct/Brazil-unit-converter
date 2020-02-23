@@ -1,10 +1,10 @@
 import React, { useContext, useState, useEffect } from "react";
 
-import { LanguageContext } from "../contexts/LanguageContext";
+import { LanguageContext, Text } from "../contexts/LanguageContext";
+
 
 const UnitSelect = () => {
-    const { language, setLanguage } = useContext(LanguageContext);
-
+    // const { dictionary, setLanguage } = useContext(LanguageContext);
 
     const [convertedVal, setConvertedVal] = useState(1);
     const [amount, setAmount] = useState(1);
@@ -12,8 +12,8 @@ const UnitSelect = () => {
     const [toUnit, setToUnit] = useState(1);
 
     const [fromUnits, setfromUnits] = useState([
-        { label: "Teaspoon (BZ)", value: "tea-bz", conversion: 5 },
-        { label: "Dessert spoon (BZ)", value: "dessert-bz", conversion: 10 },
+        { label: "Teaspoon (BZ)", value: "tspbz", conversion: 5 },
+        { label: "Dessert spoon (BZ)", value: "dspbz", conversion: 10 },
         { label: "Soup spoon (BZ)", value: "soup-bz", conversion: 15 },
         { label: "Teacup (BZ)", value: "cup-tea-bz", conversion: 250 },
         { label: "Cup (BZ)", value: "cup-bz", conversion: 240 },
@@ -58,6 +58,8 @@ const UnitSelect = () => {
 
     return (
         <div className="unit-form">
+            {Text.tid}
+
                 <span>
 
                     <input
@@ -79,6 +81,8 @@ const UnitSelect = () => {
                 {fromUnits.map(({ label, value, conversion }) => (
                     <option key={value} value={conversion}>
                         {label}
+                        {/* <Text tid="value" /> */}
+                        {/* {Text.tid} */}
                     </option>
                 ))}
 

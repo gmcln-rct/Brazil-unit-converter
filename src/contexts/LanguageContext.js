@@ -2,13 +2,13 @@ import React, { useState, createContext, useContext } from 'react';
 
 import { languageOptions, dictionaryList } from '../languages';
 
-// create the language context with default selected language
+// Create context with default language
 export const LanguageContext = createContext({
     language: languageOptions[0],
     dictionary: dictionaryList[languageOptions[0].id]
 });
 
-// it provides the language context to app
+// Language context
 export function LanguageContextProvider(props) {
     const languageContext = useContext(LanguageContext);
     const [language, setLanguage] = useState(languageContext.language);
@@ -30,7 +30,7 @@ export function LanguageContextProvider(props) {
     );
 };
 
-// get text according to id & current language
+// Access text based on selected language
 export function Text(props) {
     const languageContext = useContext(LanguageContext);
 
