@@ -12,48 +12,33 @@ const UnitSelect = () => {
     const [toUnit, setToUnit] = useState(1);
 
     const [fromUnits, setfromUnits] = useState([
-        { label: "Teaspoon (BZ)", value: "tspbz", conversion: 5 },
-        { label: "Dessert spoon (BZ)", value: "dspbz", conversion: 10 },
-        { label: "Soup spoon (BZ)", value: "soup-bz", conversion: 15 },
-        { label: "Teacup (BZ)", value: "cup-tea-bz", conversion: 250 },
-        { label: "Cup (BZ)", value: "cup-bz", conversion: 240 },
-        { label: "Teaspoon (US)", value: "tea-us", conversion: 4.92 },
-        { label: "Tablespoon (US)", value: "table-us", conversion: 14.79 },
-        { label: "Cup (US)", value: "cup-us", conversion: 240 },
-        { label: "Milliliter", value: "ml", conversion: 1 },
+      { label: "Teaspoon (BZ)", value: "teabz", conversion: 5 },
+      { label: "Dessert spoon (BZ)", value: "dspbz", conversion: 10 },
+      { label: "Soup spoon (BZ)", value: "sspbz", conversion: 15 },
+      { label: "Teacup (BZ)", value: "teacupbz", conversion: 250 },
+      { label: "Cup (BZ)", value: "cupbz", conversion: 240 },
+      { label: "Teaspoon (US)", value: "tspus", conversion: 4.92 },
+      { label: "Tablespoon (US)", value: "tbspus", conversion: 14.79 },
+      { label: "Cup (US)", value: "cupus", conversion: 240.001 },
+      { label: "Milliliter", value: "ml", conversion: 1 }
     ]);
 
     const [toUnits, setToUnits] = useState([
-        { label: "Teaspoon (BZ)", value: "tea-bz", conversion: 5 },
-        { label: "Dessert spoon (BZ)", value: "dessert-bz", conversion: 10 },
-        { label: "Soup spoon (BZ)", value: "soup-bz", conversion: 15 },
-        { label: "Teacup (BZ)", value: "cup-tea-bz", conversion: 250 },
-        { label: "Cup (BZ)", value: "cup-bz", conversion: 240 },
-        { label: "Teaspoon (US)", value: "tea-us", conversion: 4.92 },
-        { label: "Tablespoon (US)", value: "table-us", conversion: 14.79 },
-        { label: "Cup (US)", value: "cup-us", conversion: 240 },
-        { label: "Milliliter", value: "ml", conversion: 1 },
+      { label: "Teaspoon (BZ)", value: "teabz", conversion: 5 },
+      { label: "Dessert spoon (BZ)", value: "dspbz", conversion: 10 },
+      { label: "Soup spoon (BZ)", value: "sspbz", conversion: 15 },
+      { label: "Teacup (BZ)", value: "teacupbz", conversion: 250 },
+      { label: "Cup (BZ)", value: "cupbz", conversion: 240 },
+      { label: "Teaspoon (US)", value: "tspus", conversion: 4.92 },
+      { label: "Tablespoon (US)", value: "tbspus", conversion: 14.79 },
+      { label: "Cup (US)", value: "cupus", conversion: 240.001 },
+      { label: "Milliliter", value: "ml", conversion: 1 }
     ]);
 
     useEffect(() => {
         setConvertedVal(amount *fromUnit / toUnit)
     }, [amount,fromUnit, toUnit]);
 
-    // const 
-
-    function handleChange(e) {
-        // chooseTheme(e.target.value);
-        let idx = e.target.selectedIndex;
-
-        console.log(e.target.options[idx].value);
-        return (
-            <div>Dogs and cats</div>
-        )
-    };
-
-    // function handleSubmit(e) {
-    //     e.preventDefault();
-    // };
 
 
     return (
