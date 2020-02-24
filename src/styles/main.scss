@@ -86,14 +86,12 @@ code {
 
   margin: 0 auto;
 
-
-
 }
 
 section {
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -103,12 +101,18 @@ section {
   min-width: 400px;
   margin: 0 auto;
   padding: 2vmin;
+  h2 {
+    font-size: 1.4rem;
+  
+    margin-top: 2vmin;
+  
+  }
 }
 
 .amount-span {
   min-width: 25rem;
-  font-size: 1.2rem;
   font-weight: 700;
+
 }
 
 input[type=number] {
@@ -124,8 +128,6 @@ input[type=number] {
    
     background: rgb(153,153,153);
     background: linear-gradient(0deg, rgba(153,153,153,1) 0%, rgba(216,164,172,0.1) 0%, rgba(255,255,255,1) 100%);
-
-
   }
  
 
@@ -142,7 +144,7 @@ label {
   width: 25rem;
   max-width: 25%;
   min-width: 12rem;
-  margin: 0 0.4rem;
+  margin: 0.4rem 0.4rem;
   padding: .6rem 1.6rem .5rem .8rem;
   border: 1px solid #aaa;
   
