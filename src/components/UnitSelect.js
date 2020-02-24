@@ -57,11 +57,10 @@ const UnitSelect = () => {
 
 
     return (
-        <div className="unit-form">
+        <main className="unit-form">
 
-                <span>
-                    <div className='amount-span'>
-                    Enter Amount
+                    <section className='amount-span'>
+                        <h2>Enter Amount</h2>
                     <input
                         id="amount"
                         label="Amount"
@@ -74,8 +73,8 @@ const UnitSelect = () => {
                     />
 
 
-                    </div>
-                    <div>
+                    </section>
+                    <section>
                         <select
                             className="select-from"
                             value={fromUnit}
@@ -108,14 +107,15 @@ const UnitSelect = () => {
 
                         </select>
 
-                    </div>
+                    </section>
+                    <section>
                         <span>
                             Conversion: 
                         </span>
-                <span className='converted-val'>{(Number.isInteger(convertedVal) ? convertedVal: convertedVal.toFixed(2))}</span>
-                </span>
+                        <span className='converted-val'>{(Number.isInteger(convertedVal) ? convertedVal: convertedVal.toFixed(2))}</span>
+                    </section>
 
-        </div>
+        </main>
     );
 };
 
