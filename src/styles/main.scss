@@ -6,6 +6,8 @@ $color-bz-green: #009C3B;
 $color-bz-yellow: #FFDF00;
 $color-bz-yellow-subtle: rgb(255, 246, 185);
 $color-bz-blue: #002776;
+$color-dark-purple: #543243;
+$color-mid-purple: #A17088;
 
 $font-header: 'Montserrat', sans-serif;
 $font-main: 'Nunito Sans', sans-serif;
@@ -62,16 +64,14 @@ code {
 // HEADER SECTION
 
 .header-section{
-  // display: flex;
-  // justify-content: center;
-  // flex-direction: column;
+
 
   width: 100vw;
   padding: 2vmin;
 
   text-align: center;
   color: white;
-  background-color: #a17188;
+  background-color: $color-dark-purple;
 
   h1 {
     font-family: $font-header;
@@ -81,6 +81,7 @@ code {
 .unit-form {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   // align-content: center;
   flex-wrap: wrap;
 
@@ -91,35 +92,31 @@ code {
 section {
 
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 
-  width: 60%;
-  max-width: 960px;
-  min-width: 400px;
+  width: 30%;
+  max-width: 600px;
+  min-width: 300px;
   margin: 0 auto;
-  padding: 2vmin;
+  padding: 1.5vmin;
+
   h2 {
     font-size: 1.4rem;
-  
-    margin-top: 2vmin;
-  
+    margin: 0.4rem 0;
   }
-}
+  .amount-span {
+    min-width: 25rem;
+    font-weight: 700;
+  }
 
-.amount-span {
-  min-width: 25rem;
-  font-weight: 700;
-
-}
-
-input[type=number] {
+  input[type=number] {
     width: 5rem;
     min-width: 1rem;
     margin: 0 2vmin;
-    padding: 0.7rem 0.8rem 0.7rem 1.4rem;
+    padding: 0.3rem 0.8rem 0.3rem 1.4rem;
 
     font-size: 1.2rem;
     font-weight: 700;
@@ -128,26 +125,21 @@ input[type=number] {
     background: rgb(153,153,153);
     background: linear-gradient(0deg, rgba(153,153,153,1) 0%, rgba(216,164,172,0.1) 0%, rgba(255,255,255,1) 100%);
   }
- 
 
-// DROPDOWN
-label {
-  padding: 0.4rem;
-  font-size: 1rem;
-  font-weight: 700;
 }
 
 
-.select-from, .select-to {
 
-  width: 25rem;
-  max-width: 25%;
-  min-width: 12rem;
-  margin: 0.4rem 0.4rem;
+
+.select-from, .select-to {
+  width: 30rem;
+  max-width: 35%;
+  min-width: 15rem;
+  margin: 0 0.4rem;
   padding: .6rem 1.6rem .5rem .8rem;
   border: 1px solid #aaa;
   
-	font-size: 1rem;
+	font-size: 1.3rem;
 	font-family: sans-serif;
 	font-weight: 600;
 	color: #444;
@@ -186,11 +178,29 @@ label {
 	outline: none;
 }
 
-.converted-val {
-  margin: 0 2vmin;
-  font-size: 1.5rem;
-  font-weight: 700;
+
+section.conversion-section {
+  max-width: 2rem;
+
+  margin-top: 3vmin;
+
+  color: #f0f0f0;
+  background-color: $color-mid-purple;
+  border-radius: 20px;
+  transition: 0.4s;
+  
+  .converted-val {
+    margin: 0 2vmin;
+    
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    color: white;
+
+  }
+
 }
+
 
 
 .language-select {

@@ -6,10 +6,12 @@ import { LanguageContext, Text } from "../contexts/LanguageContext";
 const UnitSelect = () => {
     // const { dictionary, setLanguage } = useContext(LanguageContext);
 
-    const [convertedVal, setConvertedVal] = useState(1);
+     const [convertedVal, setConvertedVal] = useState(1);
     const [amount, setAmount] = useState(1);
     const [fromUnit, setFromUnit] = useState(5);
     const [toUnit, setToUnit] = useState(1);
+
+
 
     const [fromUnits, setfromUnits] = useState([
       { label: "Teaspoon (BZ)", value: "teabz", conversion: 5 },
@@ -40,67 +42,64 @@ const UnitSelect = () => {
     }, [amount,fromUnit, toUnit]);
 
 
-
     return (
-        <main className="unit-form">
+      <main className="unit-form">
+        <section className="amount-span">
+          <h2>Enter Amount To Convert</h2>
+          <input
+            id="amount"
+            label="Amount"
+            name="tsp-bz"
+            type="number"
+            autoFocus
+            value={amount}
+            onChange={event => setAmount(event.target.value)}
+          />
+        </section>
+        <section>
+          <select
+            className="select-from"
+            value={fromUnit}
+            onChange={event => setFromUnit(event.target.value)}
+          >
+            {fromUnits.map(({ label, value, conversion }) => (
+              <option key={value} value={conversion}>
+                {label}
+                {/* <Text tid="value" /> */}
+                {/* {Text.tid} */}
+              </option>
+            ))}
+          </select>
+          <section>
 
-                    <section className='amount-span'>
-                        <h2>Enter Amount To Convert</h2>
-                    <input
-                        id="amount"
-                        label="Amount"
-                        name="tsp-bz"
-                        type='number'
-
-                        autoFocus
-                        value={amount}
-                        onChange={event => setAmount(event.target.value)}
-                    />
-
-
-                    </section>
-                    <section>
-                        <select
-                            className="select-from"
-                            value={fromUnit}
-                            onChange={event => setFromUnit(event.target.value)}
-                        >
-
-                        {fromUnits.map(({ label, value, conversion }) => (
-                            <option key={value} value={conversion}>
-                                {label}
-                                {/* <Text tid="value" /> */}
-                                {/* {Text.tid} */}
-                            </option>
-                        ))}
-
-                        </select>
-
-                        <div> to </div>
+          <h2>to</h2>
+          </section>
 
 
-                        <select
-                            className="select-to"
-                            value={toUnit}
-                            onChange={event => setToUnit(event.target.value)}
-                        >
-                            {toUnits.map(({ label, value, conversion }) => (
-                                <option key={value} value={conversion}>
-                                    {label}
-                                </option>
-                            ))}
+          <select
+            className="select-to"
+            value={toUnit}
+            onChange={event => setToUnit(event.target.value)}
+          >
+            {toUnits.map(({ label, value, conversion }) => (
+              <option key={value} value={conversion}>
+                {label}
+              </option>
+            ))}
+          </select>
+        </section>
+        <section className="conversion-section">
+            <div>
 
-                        </select>
-
-                    </section>
-                    <section>
-                        <h2>
-                            Conversion: 
-                        </h2>
-                        <span className='converted-val'>{(Number.isInteger(convertedVal) ? convertedVal: convertedVal.toFixed(2))}</span>
-                    </section>
-
-        </main>
+          <h2>Converted Amount:</h2>
+            </div>
+          <div className="converted-val">
+            {Number.isInteger(convertedVal)
+              ? convertedVal
+              : convertedVal.toFixed(2)}
+          </div>
+        </section>
+      </main>
     );
 };
 
