@@ -51,17 +51,17 @@ const UnitSelect = () => {
         )
     };
 
-    function handleSubmit(e) {
-        e.preventDefault();
-    };
+    // function handleSubmit(e) {
+    //     e.preventDefault();
+    // };
 
 
     return (
         <div className="unit-form">
-            {Text.tid}
 
                 <span>
-
+                    <div className='amount-span'>
+                    Enter Amount
                     <input
                         id="amount"
                         label="Amount"
@@ -72,39 +72,45 @@ const UnitSelect = () => {
                         value={amount}
                         onChange={event => setAmount(event.target.value)}
                     />
-                <select
-                    className="select-from"
-                    value={fromUnit}
-                    onChange={event => setFromUnit(event.target.value)}
-                >
-
-                {fromUnits.map(({ label, value, conversion }) => (
-                    <option key={value} value={conversion}>
-                        {label}
-                        {/* <Text tid="value" /> */}
-                        {/* {Text.tid} */}
-                    </option>
-                ))}
-
-                </select>
-
-                <span> to </span>
 
 
-                <select
-                    className="select-to"
-                    value={toUnit}
-                    onChange={event => setToUnit(event.target.value)}
-                >
-                    {toUnits.map(({ label, value, conversion }) => (
-                        <option key={value} value={conversion}>
-                            {label}
-                        </option>
-                    ))}
+                    </div>
+                    <div>
+                        <select
+                            className="select-from"
+                            value={fromUnit}
+                            onChange={event => setFromUnit(event.target.value)}
+                        >
 
-                </select>
+                        {fromUnits.map(({ label, value, conversion }) => (
+                            <option key={value} value={conversion}>
+                                {label}
+                                {/* <Text tid="value" /> */}
+                                {/* {Text.tid} */}
+                            </option>
+                        ))}
+
+                        </select>
+
+                        <span> to </span>
+
+
+                        <select
+                            className="select-to"
+                            value={toUnit}
+                            onChange={event => setToUnit(event.target.value)}
+                        >
+                            {toUnits.map(({ label, value, conversion }) => (
+                                <option key={value} value={conversion}>
+                                    {label}
+                                </option>
+                            ))}
+
+                        </select>
+
+                    </div>
                         <span>
-                            => 
+                            Conversion: 
                         </span>
                 <span className='converted-val'>{(Number.isInteger(convertedVal) ? convertedVal: convertedVal.toFixed(2))}</span>
                 </span>
