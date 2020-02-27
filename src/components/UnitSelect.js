@@ -25,15 +25,15 @@ const UnitSelect = () => {
     ]);
 
     const [toUnits, setToUnits] = useState([
-      { label: "Teaspoon (BZ)", value: "tspbz", conversion: 5 },
-      { label: "Dessert spoon (BZ)", value: "dspbz", conversion: 10 },
-      { label: "Soup spoon (BZ)", value: "sspbz", conversion: 15 },
-      { label: "Teacup (BZ)", value: "teacupbz", conversion: 250 },
-      { label: "Cup (BZ)", value: "cupbz", conversion: 240 },
-      { label: "Teaspoon (US)", value: "tspus", conversion: 4.92 },
-      { label: "Tablespoon (US)", value: "tbspus", conversion: 14.79 },
-      { label: "Cup (US)", value: "cupus", conversion: 240.001 },
-      { label: "Milliliter", value: "ml", conversion: 1 }
+      { label: "Teaspoon (BZ)", unitId: "tspbz", conversion: 5 },
+      { label: "Dessert spoon (BZ)", unitId: "dspbz", conversion: 10 },
+      { label: "Soup spoon (BZ)", unitId: "sspbz", conversion: 15 },
+      { label: "Teacup (BZ)", unitId: "teacupbz", conversion: 250 },
+      { label: "Cup (BZ)", unitId: "cupbz", conversion: 240 },
+      { label: "Teaspoon (US)", unitId: "tspus", conversion: 4.92 },
+      { label: "Tablespoon (US)", unitId: "tbspus", conversion: 14.79 },
+      { label: "Cup (US)", unitId: "cupus", conversion: 240.001 },
+      { label: "Milliliter", unitId: "ml", conversion: 1 }
     ]);
 
     useEffect(() => {
@@ -61,7 +61,7 @@ const UnitSelect = () => {
             value={fromUnit}
             onChange={event => setFromUnit(event.target.value)}
           >
-            {fromUnits.map(({ label, value, unitId, conversion }) => (
+            {fromUnits.map(({ value, unitId, conversion }) => (
               <option key={value} value={conversion}>
                 {/* {label} */}
                 {dictionary[unitId]}
@@ -81,9 +81,9 @@ const UnitSelect = () => {
             value={toUnit}
             onChange={event => setToUnit(event.target.value)}
           >
-            {toUnits.map(({ label, value, conversion }) => (
+            {toUnits.map(({ value, unitId, conversion }) => (
               <option key={value} value={conversion}>
-                {label}
+                {dictionary[unitId]}
               </option>
             ))}
           </select>
