@@ -5,9 +5,8 @@ import { LanguageContext, Text } from "../contexts/LanguageContext";
 
 const UnitSelect = () => {
     const { dictionary, setLanguage } = useContext(LanguageContext);
-    const { cupbz, setCubBZ } = useContext(LanguageContext);
 
-     const [convertedVal, setConvertedVal] = useState(1);
+    const [convertedVal, setConvertedVal] = useState(1);
     const [amount, setAmount] = useState(1);
     const [fromUnit, setFromUnit] = useState(5);
     const [toUnit, setToUnit] = useState(1);
@@ -41,13 +40,11 @@ const UnitSelect = () => {
         setConvertedVal(amount *fromUnit / toUnit)
     }, [amount,fromUnit, toUnit]);
 
-
+ 
     return (
       <main className="unit-form">
         <section className="amount-span">
           <h2>Enter Amount To Convert</h2>
-          {/* <Text tid="cupbz" /> */}
-
           <input
             id="amount"
             label="Amount"
@@ -66,12 +63,10 @@ const UnitSelect = () => {
           >
             {fromUnits.map(({ label, value, unitId, conversion }) => (
               <option key={value} value={conversion}>
-                {label}
-                {/* <Text tid={unitId} /> */}
+                {/* {label} */}
+                {dictionary[unitId]}
+                {/* {Text tid={unitId} } */}
 
-                {/* <Text tid="value" /> */}
-                {/* {Text.tid=unitId} */}
-                {/* <Text tid='{value}' /> */}
              </option>
             ))}
           </select>
