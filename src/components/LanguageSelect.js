@@ -32,22 +32,7 @@ const LanguageSelect = () => {
                     </option>
                 ))}
             </select>
-            {/* <div className="toggle-switch"
-                onChange={handleLanguageChange}
-                value={languageContext.language.id}
-            >
-                <input
-                    type="checkbox"
-                    className="toggle-switch-checkbox"
-                    name={languageContext.language.id}
-                    id={languageContext.language.id}
-                />
-                <label className="toggle-switch-label" htmlFor={languageContext.language.id}>
-                    <span className="toggle-switch-inner" />
-                    <span className="toggle-switch-switch" />
-                </label>
 
-            </div> */}
 
         </section>
 

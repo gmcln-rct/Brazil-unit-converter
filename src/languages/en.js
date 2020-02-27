@@ -7,7 +7,7 @@ const en = {
     tspus: 'Teaspoon (US)',
     tbspus: 'Tablespoon (US)',
     cupus: 'Cup (US)',
-    ml: 'Milliliter',
+    ml: 'Milliliter (ml)',
 };
 
 export default en;

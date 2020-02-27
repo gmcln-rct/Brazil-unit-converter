@@ -7,7 +7,7 @@ const pt = {
     tspus: 'colher de chá (EUA)',
     tbspus: 'colher de sopa (EUA',
     cupus: 'copo (EUA)',
-    ml: 'Mililitro',
+    ml: 'mililitro',
 };
 
 export default pt;
