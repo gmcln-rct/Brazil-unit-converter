@@ -60,8 +60,8 @@ const LanguageSelect = () => {
     // };
 
     const handleLanguageChange = (event) => {
-        const selectedLanguage = languageContext.language.id === 0? 1 : 0;
-        // const selectedLanguage = languageOptions.find(item => item.id === event.target.value);
+        // const selectedLanguage = languageContext.language.id === 0? 1 : 0;
+        const selectedLanguage = languageOptions.find(item => item.id === event.target.value);
         // set selected language by calling context method
         languageContext.setLanguage(selectedLanguage);
     };
