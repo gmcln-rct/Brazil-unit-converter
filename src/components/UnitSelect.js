@@ -44,7 +44,9 @@ const UnitSelect = () => {
     return (
       <main className="unit-form">
         <section className="amount-span">
-          <h2>Enter Amount To Convert</h2>
+          <h1>
+            <Text tid="convert" />
+          </h1>
           <input
             id="amount"
             label="Amount"
@@ -69,9 +71,11 @@ const UnitSelect = () => {
              </option>
             ))}
           </select>
-          <section>
 
-          <h2>to</h2>
+          <section>
+            <h2>            
+              <Text tid="to" />
+            </h2>
           </section>
 
           <select
@@ -89,7 +93,7 @@ const UnitSelect = () => {
         <section className="conversion-section">
             <div>
 
-          <h2>Converted Amount:</h2>
+            <h2><Text tid="converted" /></h2>
             </div>
           <div className="converted-val">
             {Number.isInteger(convertedVal)

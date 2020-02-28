@@ -95,10 +95,16 @@ section {
   margin: 0 auto;
   padding: 1.5vmin;
 
+  h1 {
+    padding: 2vmin 0;
+    text-align: center;
+  }
+
   h2 {
     font-size: 1.4rem;
     margin: 0.4rem 0;
   }
+
   .amount-span {
     min-width: 25rem;
     font-weight: 700;
