@@ -52,42 +52,54 @@ import { LanguageContext } from '../contexts/LanguageContext';
 
 const LanguageSelect = () => {
     const languageContext = useContext(LanguageContext);
-
-    // const handleLanguageChange = (event) => {
-    //     const selectedLanguage = languageOptions.find(item => item.id === event.target.value);
-    //     // set selected language by calling context method
-    //     languageContext.setLanguage(selectedLanguage);
-    // };
+    let selectedLanguage = languageContext.language.id;
 
     const handleLanguageChange = (event) => {
-        // const selectedLanguage = languageContext.language.id === 0? 1 : 0;
         const selectedLanguage = languageOptions.find(item => item.id === event.target.value);
         // set selected language by calling context method
         languageContext.setLanguage(selectedLanguage);
     };
 
 
+    // const toggleLanguage = (event) => {
+    //     // const selectedLanguage = languageContext.language.id === 0? 1 : 0;
+    //     // const currLanguage = languageContext.language.id;
+    //     // const selectedLanguage = currLanguage === 'en'? 'pt' : 'en';
+    //     console.log(event.target.value==='en');
+    //     if (event.target.value === 'en') {
+    //          selectedLanguage = 'pt';
+    //     } else {
+    //          selectedLanguage = 'en';
+    //     }
+    //     console.log(selectedLanguage);
+    //     // const selectedLanguage = languageOptions.find(item => item.id === event.target.value);
+    //     // set selected language by calling context method
+    //     languageContext.setLanguage(selectedLanguage);
+    // };
+
+
     return (
         <section className='language-select'>
-            <h2>
+            {/* <h2>
                 Choose Language
             </h2>
             <input
                 // checked={isOn}
-                onChange={handleLanguageChange}
+                onChange={toggleLanguage}
                 className="react-switch-checkbox"
-                id={languageContext.language.id}
+                id={selectedLanguage}
                 type="checkbox"
-                value={languageContext.language.id}
+                value={selectedLanguage}
             />
             <label
                 className="react-switch-label"
-                htmlFor={languageContext.language.id}
+                htmlFor={selectedLanguage}
+                
             >
                 <span className={`react-switch-button`} />
-            </label>
+            </label> */}
 
-            {/* <h2>
+            <h2>
                 Choose Language
             </h2>
             <select
@@ -102,7 +114,7 @@ const LanguageSelect = () => {
                         {item.text}
                     </option>
                 ))}
-            </select> */}
+            </select>
 
 
         </section>

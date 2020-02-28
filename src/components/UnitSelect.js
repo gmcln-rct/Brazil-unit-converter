@@ -48,7 +48,6 @@ const UnitSelect = () => {
           <input
             id="amount"
             label="Amount"
-            // name="tsp-bz"
             type="number"
             autoFocus
             value={amount}
