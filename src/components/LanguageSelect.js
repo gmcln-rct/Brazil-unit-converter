@@ -48,9 +48,13 @@ import React, { useContext } from 'react';
 
 import { languageOptions } from '../languages';
 
-import { LanguageContext } from '../contexts/LanguageContext';
+// import { LanguageContext } from '../contexts/LanguageContext';
+
+import { LanguageContext } from "../contexts/LanguageContext";
+
 
 const LanguageSelect = () => {
+    
     const languageContext = useContext(LanguageContext);
     let selectedLanguage = languageContext.language.id;
 
@@ -100,6 +104,7 @@ const LanguageSelect = () => {
             </label> */}
 
             <h2>
+                {/* <Text tid="chooseLang" /> */}
                 Choose Language
             </h2>
             <select

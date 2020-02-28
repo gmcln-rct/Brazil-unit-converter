@@ -92,8 +92,7 @@ const UnitSelect = () => {
         </section>
         <section className="conversion-section">
             <div>
-
-            <h2><Text tid="converted" /></h2>
+              <h2><Text tid="converted" /></h2>
             </div>
           <div className="converted-val">
             {Number.isInteger(convertedVal)

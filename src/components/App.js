@@ -9,7 +9,6 @@ import LanguageSelect from './LanguageSelect';
 
 import '../styles/reset.css';
 import '../styles/main.scss';
-import Converted from './Converted';
 
 function App() {
   return (
