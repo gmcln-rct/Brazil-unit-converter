@@ -2,7 +2,7 @@
   "name": "brasil-unit-converter",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://gmcln-rct.github.io/Brazil-unit-converter/",
+  "homepage": "https://www.copoecolher.com",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
