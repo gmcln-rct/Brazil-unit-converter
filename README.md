@@ -1,4 +1,4 @@
-![seaOrgan Landing Page](https://sea-organ-seeds.s3.amazonaws.com/images/purple-flag.jpg "Brazil Unit Converter")
+![Brazil Unit Converter Logo](https://sea-organ-seeds.s3.amazonaws.com/images/purple-flag-small.jpg "Brazil Unit Converter")
 
 ## Brazil recipe measurement converter
 
