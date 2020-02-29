@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Brazil-unit-converter/static/css/main.fc5dcc6c.chunk.css",
+    "main.css": "/Brazil-unit-converter/static/css/main.48c5f115.chunk.css",
     "main.js": "/Brazil-unit-converter/static/js/main.1d485b53.chunk.js",
     "main.js.map": "/Brazil-unit-converter/static/js/main.1d485b53.chunk.js.map",
     "runtime-main.js": "/Brazil-unit-converter/static/js/runtime-main.8dfed327.js",
@@ -8,15 +8,15 @@
     "static/js/2.535adac6.chunk.js": "/Brazil-unit-converter/static/js/2.535adac6.chunk.js",
     "static/js/2.535adac6.chunk.js.map": "/Brazil-unit-converter/static/js/2.535adac6.chunk.js.map",
     "index.html": "/Brazil-unit-converter/index.html",
-    "precache-manifest.bb13485cbe87f209dd98ff0b8f3dac30.js": "/Brazil-unit-converter/precache-manifest.bb13485cbe87f209dd98ff0b8f3dac30.js",
+    "precache-manifest.08145fedea191a1d0526931593aea9a7.js": "/Brazil-unit-converter/precache-manifest.08145fedea191a1d0526931593aea9a7.js",
     "service-worker.js": "/Brazil-unit-converter/service-worker.js",
-    "static/css/main.fc5dcc6c.chunk.css.map": "/Brazil-unit-converter/static/css/main.fc5dcc6c.chunk.css.map",
+    "static/css/main.48c5f115.chunk.css.map": "/Brazil-unit-converter/static/css/main.48c5f115.chunk.css.map",
     "static/js/2.535adac6.chunk.js.LICENSE.txt": "/Brazil-unit-converter/static/js/2.535adac6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8dfed327.js",
     "static/js/2.535adac6.chunk.js",
-    "static/css/main.fc5dcc6c.chunk.css",
+    "static/css/main.48c5f115.chunk.css",
     "static/js/main.1d485b53.chunk.js"
   ]
 }
