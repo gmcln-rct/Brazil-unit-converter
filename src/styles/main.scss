@@ -190,14 +190,14 @@ section.conversion-section {
   margin-top: 3vmin;
 
   // color: rgb(247, 243, 177);
-  color: #f7e97c;
+  color: #e5d450;
   background-color: $color-mid-purple;
   border-radius: 20px;
 
   .converted-val {
     margin: 0 2vmin;
     
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 700;
 
     color: white;
@@ -210,7 +210,7 @@ section.conversion-section {
 
 .language-select {
   margin: 0 auto;
-  padding: 5vmin;
+  padding: 4vmin;
   text-align: center;
 
   h2 {
