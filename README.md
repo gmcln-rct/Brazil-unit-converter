@@ -2,9 +2,11 @@
 
 ## Brazil recipe measurement converter
 
-Convert Brazilian recipe units of measurement to U.S. and metric units. This web app helps cooks convert units of measurement in Brazilian recipes to that of other countries.
+Though there are similarities with both U.S. and European units, the units of measurement used in Brazil are different, causing confusion when trying to convert recipes. 
 
-Currently multi-lingual (Portuguese) not enabled. Only English.
+This app aims to address that problem by enabling users to convert between Brazilian recipe measurements and U.S. / metric units of volume. (Other measurements to be added in the future.)
+
+The user can toggle between English and Portuguese text.
 
 Now get cooking!
 
