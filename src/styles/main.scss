@@ -190,9 +190,12 @@ section.conversion-section {
   margin-top: 3vmin;
 
   // color: rgb(247, 243, 177);
-  color: #e5d450;
+  color: $color-bz-yellow-subtle;
   background-color: $color-mid-purple;
   border-radius: 20px;
+
+    transition: 0.5s;
+
 
   .converted-val {
     margin: 0 2vmin;
@@ -205,67 +208,25 @@ section.conversion-section {
   }
 }
 
-
-// ------------ FORM SECTION ------------
+// ------------ LANGUAGE SECTION ------------
 
 .language-select {
   margin: 0 auto;
-  padding: 4vmin;
+  padding: 3vmin;
   text-align: center;
 
   h2 {
     padding: 2vmin ;
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   select  {
     width: 8rem;
+    padding: 5px;
     color: $color-dark-purple;
+    font-weight: 700;
   }
-
 
 }
 
-
-// switch
-// .react-switch-checkbox {
-//   height: 0;
-//   width: 0;
-//   visibility: hidden;
-// }
-
-// .react-switch-label {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   cursor: pointer;
-//   width: 100px;
-//   height: 50px;
-//   background: grey;
-//   border-radius: 100px;
-//   position: relative;
-//   transition: background-color .2s;
-// }
-
-// .react-switch-label .react-switch-button {
-//   content: '';
-//   position: absolute;
-//   top: 2px;
-//   left: 2px;
-//   width: 45px;
-//   height: 45px;
-//   border-radius: 45px;
-//   transition: 0.2s;
-//   background: #fff;
-//   box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
-// }
-
-// .react-switch-checkbox:checked + .react-switch-label .react-switch-button {
-//   left: calc(100% - 2px);
-//   transform: translateX(-100%);
-// }
-
-// .react-switch-label:active .react-switch-button {
-//   width: 60px;
-// }
