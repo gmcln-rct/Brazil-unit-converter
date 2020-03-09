@@ -1,6 +1,11 @@
 import React from 'react';
 
-import { Facebook, Pinterest } from "react-social-sharing";
+import { Facebook, Pinterest, Mail } from "react-social-sharing";
+
+const stylesMail = {
+  background: "#777"
+};
+
 
 const stylesFacebook = {
   background: "#543243"
@@ -16,6 +21,14 @@ const ShareSelect = () => {
 
     return (
       <section className="share-select">
+        <Mail
+          solid
+          small
+          style={stylesMail}
+          message="I use Copo e colher - Brazilian recipe converter!"
+          link={shareUrl}
+        />
+
         <Facebook solid small style={stylesFacebook} link={shareUrl} />
         <Pinterest
           solid
