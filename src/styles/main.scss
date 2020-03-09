@@ -109,7 +109,7 @@ section {
 
   h2 {
     font-size: 1.4rem;
-    margin: 0.4rem 0;
+    margin: 0.2rem 0;
   }
 
   .amount-span {
@@ -194,7 +194,7 @@ section.conversion-section {
   background-color: $color-mid-purple;
   border-radius: 20px;
 
-    transition: 0.5s;
+  transition: 0.5s;
 
 
   .converted-val {
@@ -212,7 +212,7 @@ section.conversion-section {
 
 .language-select {
   margin: 0 auto;
-  padding: 2vmin;
+  padding: 1vmin 0 0 0;
   text-align: center;
 
   h2 {
@@ -230,3 +230,13 @@ section.conversion-section {
 
 }
 
+.share-select {
+  margin: 0 auto;
+  padding: 2vmin;
+  font-size: 1rem;
+
+}
+
+// .sc-bdVaJa sc-ifAKCX ksIwnZ {
+
+// }
