@@ -73,9 +73,9 @@ const UnitSelect = () => {
           </select>
 
           <section>
-            <h2>            
+            <div className='to-section'>            
               <Text tid="to" />
-            </h2>
+            </div>
           </section>
 
           <select
