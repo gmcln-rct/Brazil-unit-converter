@@ -3,7 +3,7 @@ import React from 'react';
 import { Facebook, Pinterest, Mail } from "react-social-sharing";
 
 const stylesMail = {
-  background: "#777"
+  background: "#888"
 };
 
 
@@ -25,11 +25,12 @@ const ShareSelect = () => {
           solid
           small
           style={stylesMail}
-          message="I use Copo e colher - Brazilian recipe converter!"
+          subject="Copo e colher - Brazilian recipe converter!"
           link={shareUrl}
         />
 
         <Facebook solid small style={stylesFacebook} link={shareUrl} />
+
         <Pinterest
           solid
           small
