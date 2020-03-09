@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {
-  EmailShareButton
+  EmailShareButton,
   FacebookShareButton,
 TwitterShareButton,
 
@@ -9,7 +9,7 @@ TwitterShareButton,
 
 const ShareSelect = () => {
     
-
+    let shareUrl = 'http://copoecolher.com'
 
 
 
@@ -17,7 +17,7 @@ const ShareSelect = () => {
         <section className='share-select'>
  
 
-            <FacebookShareCount url={shareUrl} />
+            <FacebookShareButton url={shareUrl} />
 
         </section>
 

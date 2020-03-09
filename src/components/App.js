@@ -5,6 +5,7 @@ import {LanguageContextProvider} from '../contexts/LanguageContext';
 import Header from './Header';
 import UnitSelect from './UnitSelect';
 import LanguageSelect from './LanguageSelect';
+import ShareSelect from './Share';
 
 
 import '../styles/reset.css';
@@ -17,6 +18,7 @@ function App() {
         <Header />
         <UnitSelect />
         <LanguageSelect />
+        <ShareSelect />
       </LanguageContextProvider>
     </div>
   );
