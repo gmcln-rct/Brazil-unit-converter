@@ -9,6 +9,9 @@ const Header = () => {
                 
             <h1>Brazil Recipe Converter</h1>
 
+            <h2>Convert between Brazilian and U.S./Metric Units</h2>
+
+
         </div>
     )
 

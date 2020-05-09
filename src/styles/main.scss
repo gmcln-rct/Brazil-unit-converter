@@ -59,17 +59,24 @@ code {
 .header-section{
 
   width: 100vw;
-  padding: 3vmin 0;
+  padding: 3vmin 0 0 0;
 
   text-align: center;
   color: white;
   background-color: $color-dark-purple;
 
   h1 {
-    padding-top: 3vmin;
+    padding: 3vmin 0 2vmin 0;
     font-family: $font-header;
     font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
     line-height: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
+  }
+  h2 {
+    padding: 1vmin 0;
+    font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1800 - 300)));
+    font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1800 - 300)));
+    color: #222;
+    background-color: rgb(212, 212, 212);
   }
   .logo {
     width: 100px;
