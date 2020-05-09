@@ -68,8 +68,8 @@ code {
   h1 {
     padding-top: 3vmin;
     font-family: $font-header;
-    font-size: 1.8rem;
-    line-height: 2.5rem;
+    font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
+    line-height: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
   }
   .logo {
     width: 100px;
