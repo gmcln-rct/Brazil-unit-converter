@@ -7,7 +7,7 @@ const Header = () => {
             
             <img src='purpleflag.svg' alt="Copo e colher - Brazilian Unit Converter logo" className='logo'/>
                 
-            <h1>Brazil Recipe  Converter</h1>
+            <h1>Brazil Recipe Converter</h1>
 
         </div>
     )
