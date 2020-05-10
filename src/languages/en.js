@@ -8,9 +8,9 @@ const en = {
     tbspus: 'Tablespoon (US)',
     cupus: 'Cup (US)',
     ml: 'Milliliter (ml)',
-    convert: 'Enter Amount To Convert',
+    convert: 'Enter Amount:',
     to: 'to',
-    converted: 'Converted Amount',
+    converted: 'Converted Amount:',
     chooselang: 'Choose Language'
 };
 

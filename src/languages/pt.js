@@ -8,9 +8,9 @@ const pt = {
     tbspus: 'colher de sopa (EUA',
     cupus: 'copo (EUA)',
     ml: 'mililitro',
-    convert: 'Digite o valor a converter',
+    convert: 'Digite o valor:',
     to: 'para',
-    converted: 'Valor convertido',
+    converted: 'Valor convertido:',
     chooselang: 'Selecione o idioma'
 };
 

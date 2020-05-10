@@ -38,24 +38,6 @@ const LanguageSelect = () => {
 
     return (
         <section className='language-select'>
-            {/* <h2>
-                Choose Language
-            </h2>
-            <input
-                // checked={isOn}
-                onChange={toggleLanguage}
-                className="react-switch-checkbox"
-                id={selectedLanguage}
-                type="checkbox"
-                value={selectedLanguage}
-            />
-            <label
-                className="react-switch-label"
-                htmlFor={selectedLanguage}
-                
-            >
-                <span className={`react-switch-button`} />
-            </label> */}
 
             <h2>
                 {/* <Text tid="chooseLang" /> */}
