@@ -11,10 +11,9 @@ const Header = () => {
 
             {/* <h2>Convert between Brazilian and U.S./Metric Measurement</h2> */}
             <details>
-                <summary>Convert between Brazilian and U.S./Metric Measurement</summary>
-                <p>The units of measurement used for recipes in Brazil are different than in the U.S. and Europe, often causing confusion when converting recipes. This app address this problem by enabling users to convert between different units of volume, in English or Portuguese</p>
-                <p>Developed by Glenn McClanan with React Hooks and Context API.</p>
-
+                <summary>Convert between Brazilian and U.S./Metric Measurements</summary>
+                <p>The units of measurement used for recipes in Brazil are different than in the U.S. and Europe, often causing confusion when converting amounts. This app enables users to convert between different recipe measurements in English or Portuguese</p>
+                <p>Developed by Glenn McClanan using React Hooks and Context API.</p>
             </details>
 
         </div>
