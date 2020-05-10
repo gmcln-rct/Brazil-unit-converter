@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-// import { MovieContext } from '../contexts/MovieContext';
 
 const UnitDetail = ({ movie }) => {
     return (

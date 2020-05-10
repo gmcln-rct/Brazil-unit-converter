@@ -5,11 +5,10 @@ const Header = () => {
     return (
         <div className = "header-section">
             
-            <img src='purpleflag.svg' alt="Copo e colher - Brazilian Unit Converter logo" className='logo'/>
+            <img src='purpleflag.svg' alt="Copo e colher - Brazilian Unit Converter logo" className='logo' aria-label='Copo e colher - Brazilian Unit Converter logo'/>
                 
             <h1>Brazil Recipe Converter</h1>
 
-            {/* <h2>Convert between Brazilian and U.S./Metric Measurement</h2> */}
             <details>
                 <summary>Convert between Brazilian and U.S./Metric Measurements</summary>
                 <p>The units of measurement used for recipes in Brazil are different than in the U.S. and Europe, often causing confusion when converting amounts. This app enables users to convert between different recipe measurements in English or Portuguese</p>
