@@ -74,9 +74,16 @@ code {
   details {
     padding: 1vmin 0;
     font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1800 - 300)));
-    font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1800 - 300)));
     color: #543243;
     background-color: rgb(212, 212, 212);
+    summary {
+      font-weight:  700;
+    }
+    p {
+      padding: 0 5vmin;
+      font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1800 - 300)));
+
+    }
   }
   .logo {
     width: 100px;
