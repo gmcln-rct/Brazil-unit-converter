@@ -79,16 +79,19 @@ code {
     transition: 0.3s;
     summary {
       font-weight:  700;
+      color: $color-dark-purple;
+
+      &:hover {
+        color: $color-mid-purple;
+      }
     }
     p {
-      padding: 0 5vmin;
+      padding: 2vmin 5vmin;
       font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1800 - 300)));
 
     }
-    &:hover {
-      color: $color-mid-purple;
-    }
   }
+
   .logo {
     width: 100px;
     margin: 0 auto;
