@@ -76,6 +76,7 @@ code {
     font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1800 - 300)));
     color: #543243;
     background-color: rgb(212, 212, 212);
+    transition: 0.3s;
     summary {
       font-weight:  700;
     }
@@ -83,6 +84,9 @@ code {
       padding: 0 5vmin;
       font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1800 - 300)));
 
+    }
+    &:hover {
+      color: $color-mid-purple;
     }
   }
   .logo {
