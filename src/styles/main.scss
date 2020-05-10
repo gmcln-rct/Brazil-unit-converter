@@ -71,11 +71,11 @@ code {
     font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
     line-height: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
   }
-  h2 {
+  details {
     padding: 1vmin 0;
     font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1800 - 300)));
     font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1800 - 300)));
-    color: #222;
+    color: #543243;
     background-color: rgb(212, 212, 212);
   }
   .logo {

@@ -9,8 +9,12 @@ const Header = () => {
                 
             <h1>Brazil Recipe Converter</h1>
 
-            <h2>Convert between Brazilian and U.S./Metric Units</h2>
-
+            {/* <h2>Convert between Brazilian and U.S./Metric Measurement</h2> */}
+            <details>
+                <summary>Convert between Brazilian and U.S./Metric Measurement</summary>
+                <p>The units of measurement used in Brazil are different that in the U.S. and Europe, causing confusion when converting recipes.
+This app address tjos problem by enabling users to convert between different units of volume, in English or Portuguese</p>
+            </details>
 
         </div>
     )
