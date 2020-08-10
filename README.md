@@ -1,6 +1,6 @@
 
 
-## Brazil recipe measurement converter
+## *Copo e Colher* - Brazil recipe measurement converter
 ![Copo e Colher - Landing Page](https://site-social-images.s3.amazonaws.com/copoecolher.gif "Copo e Colher - Landing Page")
 
 Copo e colher ("cup and spoon" in Brazilian Portuguese") is a web app for cooks Though there are similarities with both U.S. and European units, the units of measurement used in Brazil are different, causing confusion when trying to convert recipes. 
