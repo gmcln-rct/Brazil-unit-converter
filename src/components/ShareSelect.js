@@ -8,15 +8,15 @@ const stylesMail = {
 
 
 const stylesFacebook = {
-  background: "#543243"
+  background: "#888"
 };
 
 const stylesPinterest = {
-  background: "#A17088"
+  background: "#888"
 };
 
 const stylesWhatsapp = {
-  background: "#6B3B6B"
+  background: "#888"
 }
 
 const ShareSelect = () => {

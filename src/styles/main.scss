@@ -135,7 +135,6 @@ section {
   .amount-span {
     min-width: 25rem;
     font-weight: 700;
-
   }
 
   .to-section {
@@ -265,9 +264,6 @@ section.conversion-section {
   margin: 0 auto;
   padding: 1.5vmin;
   font-size: 1rem;
-
-
-
 }
 
 .sc-bdVaJa  {
@@ -276,9 +272,9 @@ section.conversion-section {
   padding: 0.5em 0.5em !important;
 
     &:hover {
-    filter: brightness(1.2);
-    transform: scale(1.2);
-    transition: 0.4s;
+      filter: brightness(1.2);
+      transform: scale(1.2);
+      transition: 0.4s;
   }
 }
 
@@ -299,18 +295,19 @@ section.conversion-section {
 //                                                                                                                              
 //           
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
 
   .header-section {
-  padding: 5vmin 0 0 0;
+    padding: 5vmin 0 0 0;
+
     h1 {
       padding: 1.5vmin 0;
     }
 
-      details {
-
-        margin: 3vmin 0 0 0;
-      }
+    details {
+      margin: 3vmin 0 0 0;
+      padding: 1vmin 1vmin;
+    }
 
   }
 
@@ -318,8 +315,13 @@ section.conversion-section {
     max-width: 80px;
     padding: 1vmin 0;
   }
+
+  .amount-span {
+    padding: 4vmin 0 2vmin 0;
+  }
+
   
   section input[type=number] {
-    padding: 0;
+    padding: 0 1vmin;
   }
 }
