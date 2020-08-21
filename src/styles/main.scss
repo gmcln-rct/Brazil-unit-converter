@@ -50,14 +50,12 @@ code {
 #root {
 
   width: 100vw;
-
   font-family: $font-main;
 }
 
 // ------------ HEADER SECTION ------------
 
 .header-section{
-
   width: 100vw;
   padding: 3vmin 0 0 0;
 
@@ -66,14 +64,15 @@ code {
   background-color: $color-dark-purple;
 
   h1 {
-    padding: 3vmin 0 3vmin 0;
+    padding: 3vmin 0;
     font-family: $font-header;
-    font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
-    line-height: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
+    font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(24px + (36 - 24) * ((100vw - 300px) / (1600 - 300)));
   }
+  
   details {
     padding: 1vmin 0;
-    font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1800 - 300)));
+    font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1600 - 300)));
     color: #543243;
     background-color: rgb(212, 212, 212);
     transition: 0.3s;
@@ -87,7 +86,7 @@ code {
     }
     p {
       padding: 2vmin 5vmin;
-      font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1800 - 300)));
+      font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
 
     }
   }
@@ -254,6 +253,7 @@ section.conversion-section {
     color: $color-dark-purple;
     font-weight: 700;
     font-size: 1.1rem;
+
   }
 
 }
@@ -279,5 +279,47 @@ section.conversion-section {
     filter: brightness(1.2);
     transform: scale(1.2);
     transition: 0.4s;
+  }
+}
+
+//  .___  ___.  _______  _______   __       ___           ______      __    __   _______ .______       __   _______     _______.
+//  |   \/   | |   ____||       \ |  |     /   \         /  __  \    |  |  |  | |   ____||   _  \     |  | |   ____|   /       |
+//  |  \  /  | |  |__   |  .--.  ||  |    /  ^  \       |  |  |  |   |  |  |  | |  |__   |  |_)  |    |  | |  |__     |   (----`
+//  |  |\/|  | |   __|  |  |  |  ||  |   /  /_\  \      |  |  |  |   |  |  |  | |   __|  |      /     |  | |   __|     \   \    
+//  |  |  |  | |  |____ |  '--'  ||  |  /  _____  \     |  `--'  '--.|  `--'  | |  |____ |  |\  \----.|  | |  |____.----)   |   
+//  |__|  |__| |_______||_______/ |__| /__/     \__\     \_____\_____\\______/  |_______|| _| `._____||__| |_______|_______/    
+//                                                                                                                              
+//   ______   ___     ___      .______   ___   ___                                                                              
+//  |____  | |__ \   / _ \     |   _  \  \  \ /  /                                                                              
+//      / /     ) | | | | |    |  |_)  |  \  V  /                                                                               
+//     / /     / /  | | | |    |   ___/    >   <                                                                                
+//    / /     / /_  | |_| |    |  |       /  .  \                                                                               
+//   /_/     |____|  \___/     | _|      /__/ \__\                                                                              
+//                                                                                                                              
+//                                                                                                                              
+//           
+
+@media only screen and (max-width: 600px) {
+
+  .header-section {
+  padding: 5vmin 0 0 0;
+    h1 {
+      padding: 1.5vmin 0;
+    }
+
+      details {
+
+        margin: 3vmin 0 0 0;
+      }
+
+  }
+
+  img.logo {
+    max-width: 80px;
+    padding: 1vmin 0;
+  }
+  
+  section input[type=number] {
+    padding: 0;
   }
 }
