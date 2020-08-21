@@ -151,12 +151,12 @@ section {
     margin: 1vmin 2vmin;
     padding: 0.3rem 0.8rem 0.3rem 1.4rem;
 
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
-
-    background: rgb(153,153,153);
-    background: linear-gradient(0deg, rgba(153,153,153,1) 0%, rgba(216,164,172,0.1) 0%, rgba(255,255,255,1) 100%);
+    color: #fff;
+    background-color: $color-dark-purple;
+    // background: linear-gradient(0deg, rgba(153,153,153,1) 0%, rgba(216,164,172,0.1) 0%, rgba(255,255,255,1) 100%);
   }
 
 }
@@ -250,7 +250,7 @@ section.conversion-section {
 
   select  {
     width: 8rem;
-    padding: 5px 0;
+    padding: 0.5vmin 2vmin;
     color: $color-dark-purple;
     font-weight: 700;
     font-size: 1.1rem;
@@ -266,10 +266,18 @@ section.conversion-section {
   padding: 1.5vmin;
   font-size: 1rem;
 
+
+
 }
 
 .sc-bdVaJa  {
   font-size: 1.3rem;
   border-radius: 50% !important;
   padding: 0.5em 0.5em !important;
+
+    &:hover {
+    filter: brightness(1.2);
+    transform: scale(1.2);
+    transition: 0.4s;
+  }
 }
